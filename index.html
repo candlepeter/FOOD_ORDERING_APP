@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Jimmy's Diner</h1>
+      <p class="header-desc">The best burgers and pizzas in town.</p>
+    </header>
+    <main class="main">
+      <section class="card-section">
+        <div class="card-wrapper">
+          <div class="card-data">
+            <!-- <img src="./images/pizza.jpg" alt="" class="card-img"> -->
+            <h2>🍕</h2>
+            <p>
+              Pizza <span>pepperoni,mushrom,mozarella</span> <span></span>$14
+            </p>
+          </div>
+          <i class="fa-light fa-circle-plus"></i>
+        </div>
+      </section>
+
+      <section class="orders"></section>
+
+      <section class="checkout-section hidden">
+        <form class="form" id="form">
+          <h3>Enter card details</h3>
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Enter your name"
+            required
+          />
+          <input type="number" placeholder="Enter card number" required />
+          <input type="number" placeholder="Enter CVV" required />
+          <button type="submit">Pay</button>
+        </form>
+      </section>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
